@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Aboreto', cursive;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -62,6 +66,7 @@ p {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
+    align-items: center;
 }
 
 .btn {
@@ -84,4 +89,89 @@ p {
 
 .header .row {
     margin-top: 70px;
+}
+
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #000000;
+}
+
+.title::after {
+    content: '';
+    background: #FF69B4;
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4 {
+    color: #000000;
+    font-weight: bolder;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img {
+    padding: 50px 0;
+    position: relative;
+    right: 290px;
+}
+
+small {
+    color: #000000;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+p {
+    color: #000000;
+    font-weight: bolder;
 }
